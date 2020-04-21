@@ -1,0 +1,59 @@
+Data Driven Testing Using Cucumber:
+1.Simple data driven- without Examples keyword
+2.data driven with Examples keyword + Scenario keyword
+3.Using tables
+
+--------
+1.Simple data driven is divided into 2 parts - 
+
+i)pass hard coded value 
+Then user enters username
+-> driver.findElement(By.name("username")).sendKeys("shubhada");
+
+ii)Value given in feature file
+Then user enters "shubhada" and "Test@123"
+-> @Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+		public void user_enters_username_and_password(String username,String password) throws Exception   {
+		driver.findElement(By.name("email")).sendKeys(username);
+		Thread.sleep(2000);
+		driver.findElement(By.name("password")).sendKeys(password);
+		Thread.sleep(2000);
+		}
+		
+-----------
+2.Data driven with Examples keyword:
+
+Examples: 
+|username|password|
+|otari.shubhada@gmail.com|Test@123|
+|shubhada|Test@123|					
+		
+->@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_username_and_password(String username,String password) throws Exception   {
+		driver.findElement(By.name("email")).sendKeys(username);
+		Thread.sleep(2000);
+		driver.findElement(By.name("password")).sendKeys(password);
+		Thread.sleep(2000);
+	}
+	
+------------
+3.Data tables
+
+data table should be created immediately after test step creation
+
+Then user enters username and password
+|otari.shubhada@gmail.com|Test@123|
+
+->	@Then("^user enters username and password$")
+	public void user_enters_username_and_password(DataTable table1) throws InterruptedException {
+	   List<List<String>> data = table1.raw();
+	   driver.findElement(By.name("email")).sendKeys(data.get(0).get(0));
+	   Thread.sleep(2000);
+	   driver.findElement(By.name("password")).sendKeys(data.get(0).get(1));
+	   Thread.sleep(2000);
+	}
+			
+
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+Data Table with Maps = Parameterization of Test cases 

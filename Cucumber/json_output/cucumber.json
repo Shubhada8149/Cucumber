@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create a new deal",
+        "description": "",
+        "id": "deal-data-creation;create-a-new-deal",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13831027880,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Free CRM Login Page",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_is_on_Free_CRM_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4510428389,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters username and password",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_enters_username_and_password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "otari.shubhada@gmail.com",
+                  "Test@123"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5132536890,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks on sign in button",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 760865978,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on home page",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2253555337,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on deal menu",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_click_on_deal_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2387446249,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click on New button",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_click_on_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28562785976,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters title,description,amount",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_enters_title_description_amount(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "description",
+                  "amount"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "test deal",
+                  "test description",
+                  "5000"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "test deal 1",
+                  "test description 1",
+                  "6000"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "test deal 2",
+                  "test description 2",
+                  "7000"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38554,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user click on save button",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_click_on_save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 234735248,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user close the browser",
+            "match": {
+              "location": "DealCreationWithMapDefinition.user_close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Deal Data Creation",
+    "description": "",
+    "id": "deal-data-creation",
+    "keyword": "Feature",
+    "uri": "E:/eclipse-workspace/Cucumber/src/main/java/features/deal_detail_map.feature"
+  }
+]
