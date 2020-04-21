@@ -28,4 +28,8 @@ package testRunner;
 	}
 
 
-
+//OR: tags = {"@SmokeTest , @RegressionTest"} --execute all tests tagged as @SmokeTest or @RegressionTest
+//And: tags	 = {"@SmokeTest","@RegressionTest"} -- execute all tests tagged as @SmokeTest and @RegressionTest
+// ~ tag =  {"~@SmokeTest"} -- ignore smoke test cases 
+		
+			
