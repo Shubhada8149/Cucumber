@@ -1,175 +1,149 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("E:/eclipse-workspace/Cucumber/src/main/java/features/deal_detail_map.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shubhada/git/Cucumber/Cucumber/src/main/java/features/tagging.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Deal Data Creation",
+  "line": 2,
+  "name": "Free CRM application Testing",
   "description": "",
-  "id": "deal-data-creation",
-  "keyword": "Feature"
+  "id": "free-crm-application-testing",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Create a new deal",
+  "line": 13,
+  "name": "Login with correct username and incorrect password",
   "description": "",
-  "id": "deal-data-creation;create-a-new-deal",
+  "id": "free-crm-application-testing;login-with-correct-username-and-incorrect-password",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 12,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
-  "name": "user is on Free CRM Login Page",
+  "line": 14,
+  "name": "this is a invalid login test",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "user enters username and password",
-  "rows": [
+formatter.match({
+  "location": "TaggingConceptDefinition.this_is_a_invalid_login_test()"
+});
+formatter.result({
+  "duration": 170944551,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 23,
+  "name": "Create new deal",
+  "description": "",
+  "id": "free-crm-application-testing;create-new-deal",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 7
-    },
-    {
-      "cells": [
-        "otari.shubhada@gmail.com",
-        "Test@123"
-      ],
-      "line": 8
+      "line": 22,
+      "name": "@SmokeTest"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
-  "line": 10,
-  "name": "user clicks on sign in button",
-  "keyword": "Then "
+  "line": 24,
+  "name": "this is create deal test",
+  "keyword": "Given "
 });
-formatter.step({
-  "line": 11,
-  "name": "user is on home page",
-  "keyword": "Then "
+formatter.match({
+  "location": "TaggingConceptDefinition.this_is_create_deal_test()"
 });
-formatter.step({
-  "line": 12,
-  "name": "user click on deal menu",
-  "keyword": "Then "
+formatter.result({
+  "duration": 66313,
+  "status": "passed"
 });
-formatter.step({
-  "line": 13,
-  "name": "user click on New button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "user enters title,description,amount",
-  "rows": [
+formatter.scenario({
+  "line": 38,
+  "name": "seach a contact",
+  "description": "",
+  "id": "free-crm-application-testing;seach-a-contact",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "title",
-        "description",
-        "amount"
-      ],
-      "line": 16
-    },
-    {
-      "cells": [
-        "test deal",
-        "test description",
-        "5000"
-      ],
-      "line": 17
-    },
-    {
-      "cells": [
-        "test deal 1",
-        "test description 1",
-        "6000"
-      ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "test deal 2",
-        "test description 2",
-        "7000"
-      ],
-      "line": 19
+      "line": 37,
+      "name": "@SmokeTest"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
-  "line": 21,
-  "name": "user click on save button",
-  "keyword": "Then "
+  "line": 39,
+  "name": "search contact test",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TaggingConceptDefinition.search_contact_test()"
+});
+formatter.result({
+  "duration": 36498,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 52,
+  "name": "seach a docs",
+  "description": "",
+  "id": "free-crm-application-testing;seach-a-docs",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 51,
+      "name": "@SmokeTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 25,
-  "name": "user close the browser",
-  "keyword": "And "
+  "line": 53,
+  "name": "search docs test",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealCreationWithMapDefinition.user_is_on_Free_CRM_Login_Page()"
+  "location": "TaggingConceptDefinition.search_docs_test()"
 });
 formatter.result({
-  "duration": 13831027880,
+  "duration": 60145,
   "status": "passed"
 });
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_enters_username_and_password(DataTable)"
+formatter.scenario({
+  "line": 57,
+  "name": "seach a forms",
+  "description": "",
+  "id": "free-crm-application-testing;seach-a-forms",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 56,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 56,
+      "name": "@EndToEndTest"
+    }
+  ]
 });
-formatter.result({
-  "duration": 4510428389,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_clicks_on_sign_in_button()"
-});
-formatter.result({
-  "duration": 5132536890,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 760865978,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_click_on_deal_menu()"
-});
-formatter.result({
-  "duration": 2253555337,
-  "status": "passed"
+formatter.step({
+  "line": 58,
+  "name": "search forms test",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealCreationWithMapDefinition.user_click_on_New_button()"
+  "location": "TaggingConceptDefinition.search_forms_test()"
 });
 formatter.result({
-  "duration": 2387446249,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_enters_title_description_amount(DataTable)"
-});
-formatter.result({
-  "duration": 28562785976,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_click_on_save_button()"
-});
-formatter.result({
-  "duration": 38554,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealCreationWithMapDefinition.user_close_the_browser()"
-});
-formatter.result({
-  "duration": 234735248,
+  "duration": 50892,
   "status": "passed"
 });
 });
