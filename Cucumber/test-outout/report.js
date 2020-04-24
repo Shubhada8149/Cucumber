@@ -1,149 +1,199 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shubhada/git/Cucumber/Cucumber/src/main/java/features/tagging.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Shubhada/git/Cucumber/Cucumber/src/main/java/features/taggedhooks.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Free CRM application Testing",
+  "line": 1,
+  "name": "Learn tagged hooks concept",
   "description": "",
-  "id": "free-crm-application-testing",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@FunctionalTest"
-    }
-  ]
+  "id": "learn-tagged-hooks-concept",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 554200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 424200,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "Login with correct username and incorrect password",
+  "line": 4,
+  "name": "Orange HRM application",
   "description": "",
-  "id": "free-crm-application-testing;login-with-correct-username-and-incorrect-password",
+  "id": "learn-tagged-hooks-concept;orange-hrm-application",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 12,
-      "name": "@SmokeTest"
+      "line": 3,
+      "name": "@First"
     }
   ]
+});
+formatter.step({
+  "line": 6,
+  "name": "Orange HRM application is given",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "user is on Orange HRM login page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "user can able to login into Orange HRM",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.orange_HRM_application_is_given()"
+});
+formatter.result({
+  "duration": 233674900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.user_is_on_Orange_HRM_login_page()"
+});
+formatter.result({
+  "duration": 89200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.user_can_able_to_login_into_Orange_HRM()"
+});
+formatter.result({
+  "duration": 124400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 85300,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 569300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 622400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 311000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 11,
+  "name": "Facebook application",
+  "description": "",
+  "id": "learn-tagged-hooks-concept;facebook-application",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 10,
+      "name": "@Second"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "Facebook application is given",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 14,
-  "name": "this is a invalid login test",
-  "keyword": "Given "
+  "name": "user is on facebook login page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "user can able to login into Facebook",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "TaggingConceptDefinition.this_is_a_invalid_login_test()"
+  "location": "TaggedHooksStepDefinition.facebook_application_is_given()"
 });
 formatter.result({
-  "duration": 170944551,
+  "duration": 138300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.user_is_on_facebook_login_page()"
+});
+formatter.result({
+  "duration": 387600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.user_can_able_to_login_into_Facebook()"
+});
+formatter.result({
+  "duration": 291100,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 282600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 491500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1013100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 23,
-  "name": "Create new deal",
+  "line": 18,
+  "name": "Gmail application",
   "description": "",
-  "id": "free-crm-application-testing;create-new-deal",
+  "id": "learn-tagged-hooks-concept;gmail-application",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 22,
-      "name": "@SmokeTest"
+      "line": 17,
+      "name": "@Third"
     }
   ]
 });
 formatter.step({
-  "line": 24,
-  "name": "this is create deal test",
+  "line": 20,
+  "name": "Gmail application is given",
   "keyword": "Given "
 });
+formatter.step({
+  "line": 21,
+  "name": "user is on Gmail login page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "user can able to login into Gmail",
+  "keyword": "Then "
+});
 formatter.match({
-  "location": "TaggingConceptDefinition.this_is_create_deal_test()"
+  "location": "TaggedHooksStepDefinition.gmail_application_is_given()"
 });
 formatter.result({
-  "duration": 66313,
+  "duration": 288500,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 38,
-  "name": "seach a contact",
-  "description": "",
-  "id": "free-crm-application-testing;seach-a-contact",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 37,
-      "name": "@SmokeTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 39,
-  "name": "search contact test",
-  "keyword": "Given "
-});
 formatter.match({
-  "location": "TaggingConceptDefinition.search_contact_test()"
+  "location": "TaggedHooksStepDefinition.user_is_on_Gmail_login_page()"
 });
 formatter.result({
-  "duration": 36498,
+  "duration": 83300,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 52,
-  "name": "seach a docs",
-  "description": "",
-  "id": "free-crm-application-testing;seach-a-docs",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 51,
-      "name": "@SmokeTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 53,
-  "name": "search docs test",
-  "keyword": "Given "
-});
 formatter.match({
-  "location": "TaggingConceptDefinition.search_docs_test()"
+  "location": "TaggedHooksStepDefinition.user_can_able_to_login_into_Gmail()"
 });
 formatter.result({
-  "duration": 60145,
+  "duration": 1165500,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 57,
-  "name": "seach a forms",
-  "description": "",
-  "id": "free-crm-application-testing;seach-a-forms",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 56,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 56,
-      "name": "@EndToEndTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 58,
-  "name": "search forms test",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaggingConceptDefinition.search_forms_test()"
-});
-formatter.result({
-  "duration": 50892,
+formatter.after({
+  "duration": 464100,
   "status": "passed"
 });
 });

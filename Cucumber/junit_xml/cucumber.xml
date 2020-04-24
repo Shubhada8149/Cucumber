@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.171158">
-<testcase classname="Free CRM application Testing" name="Login with correct username and incorrect password" time="0.170945">
-<system-out><![CDATA[Given this is a invalid login test..........................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.241059">
+<testcase classname="Learn tagged hooks concept" name="Orange HRM application" time="0.235521">
+<system-out><![CDATA[Given Orange HRM application is given.......................................passed
+When user is on Orange HRM login page.......................................passed
+Then user can able to login into Orange HRM.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM application Testing" name="Create new deal" time="0.000066">
-<system-out><![CDATA[Given this is create deal test..............................................passed
+<testcase classname="Learn tagged hooks concept" name="Facebook application" time="0.002524">
+<system-out><![CDATA[Given Facebook application is given.........................................passed
+When user is on facebook login page.........................................passed
+Then user can able to login into Facebook...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM application Testing" name="seach a contact" time="0.000036">
-<system-out><![CDATA[Given search contact test...................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM application Testing" name="seach a docs" time="0.00006">
-<system-out><![CDATA[Given search docs test......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM application Testing" name="seach a forms" time="0.000051">
-<system-out><![CDATA[Given search forms test.....................................................passed
+<testcase classname="Learn tagged hooks concept" name="Gmail application" time="0.003014">
+<system-out><![CDATA[Given Gmail application is given............................................passed
+When user is on Gmail login page............................................passed
+Then user can able to login into Gmail......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

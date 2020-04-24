@@ -19,8 +19,6 @@ Scenario: Create a new deal
 		|test deal 2|test description 2|7000|
 		
 	Then user click on save button 
-	
-	
 	 
 	And user close the browser 
  
